@@ -1,0 +1,25 @@
+{
+	"groups": [
+		{
+			"keys": "1_json,2_json,3_json",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"name": "1_json",
+			"type": "json",
+			"url": "config/1.json"
+		},
+		{
+			"name": "2_json",
+			"type": "json",
+			"url": "config/2.json"
+		},
+		{
+			"name": "3_json",
+			"type": "json",
+			"url": "config/3.json"
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"groups": [],
+	"resources": [
+		{
+			"url": "config/1.zip",
+			"type": "zip",
+			"name": "1_zip",
+			"subkeys": "1_json,2_json,3_json"
+		}
+	]
+}

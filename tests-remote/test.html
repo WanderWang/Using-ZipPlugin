@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+    <script>
+
+        for (let i = 1; i <= 100; i++) {
+            const url = `http://10.0.9.177:8080/resource/assets/${i}.png?key=${Math.random()}`
+            load(url);
+        }
+
+        const startTime = Date.now();
+
+        let total = 0;
+
+        function load(src) {
+
+            var xhr = new XMLHttpRequest();
+            xhr.onload = () => {
+                console.log(111)
+                total++;
+                if (total == 100) {
+
+                    console.log('success')
+                    // console.log()
+                    alert(Date.now() - startTime)
+                }
+            }
+            xhr.open('get', src);
+            xhr.send();
+            // var image = new Image();
+            // image.src = src;
+            // image.onload = () => {
+            //     console.log(111)
+            //     total++;
+            //     if (total == 100) {
+
+            //         console.log('success')
+            //         // console.log()
+            //         alert(Date.now() - startTime)
+            //     }
+            // }
+        }
+    </script>
+    </body>
+
+</html>
